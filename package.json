@@ -1,31 +1,55 @@
 {
-  "name": "js-template",
-  "version": "1.0.0",
-  "description": "A template JavaScript project",
-  "main": "index.js",
-  "scripts": {
-    "test": "NODE_ENV=test mocha -r ts-node/register './**/*.spec.ts'"
+  "author": "Pedro André Oliveira",
+  "bugs": {
+    "url": "https://github.com/ei06125/js-template/issues"
   },
+  "config": {
+    "paths": {
+      "root": "."
+    }
+  },
+  "cpu" : [ "x64", "ia32" ],
+  "contributors": [
+    {
+      "name": "Pedro André Oliveira",
+      "email": "pedro.andre.oliveira@outlook.com"
+    }
+  ],
+  "description": "A JavaScript template project",
+  "engines": {
+    "node": ">=10.17.0"
+  },
+  "files": [],
+  "homepage": "https://github.com/ei06125/js-template#readme",
+  "keywords": [
+    "Project",
+    "Template"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "js-template",
+  "os": [ "win32", "linux", "darwin" ],
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ei06125/js-template.git"
   },
-  "author": "Pedro André Oliveira",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ei06125/js-template/issues"
+  "scripts": {
+    "preconfig": "echo \"Run BEFORE the 'npm run config' command\"",
+    "config": "echo \"configs the project\"",
+    "postconfig": "echo \"Run AFTER the 'npm run config' command\"",
+    "prebuild": "echo \"Run BEFORE the 'npm run build' command\"",
+    "build": "echo \"Builds the project\"",
+    "postbuild": "echo \"Run AFTER the 'npm run build' command\"",
+    "pretest": "echo \"Run by the 'npm test' command\"",
+    "test": "NODE_ENV=test mocha -recursive './**/*.spec.js'",
+    "posttest": "echo \"Run by the 'npm test' command\"",
+    "preinstall": "echo \"Run BEFORE the package is installed\"",
+    "install": "echo \"run AFTER the package is installed\"",
+    "postinstall": "echo \"run AFTER the package is installed\"",
+    "preversion": "echo \"Run BEFORE bump the package version\"",
+    "version": "echo \"run BEFORE bump version\"",
+    "postversion": "echo \"Run AFTER bump the package version\""
   },
-  "homepage": "https://github.com/ei06125/js-template#readme",
-  "devDependencies": {
-    "@types/chai": "^4.2.8",
-    "@types/mocha": "^7.0.1",
-    "@types/node": "^13.7.0",
-    "chai": "^4.2.0",
-    "eslint": "^6.8.0",
-    "mocha": "^7.0.1",
-    "ts-node": "^8.6.2"
-  },
-  "dependencies": {
-    "typescript": "^3.7.5"
-  }
+  "version": "0.0.1"
 }
